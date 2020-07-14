@@ -9,7 +9,7 @@
     max-width: 400px;
     z-index: 200;
     transform: translateX(-100%); /* Move the side-drawer to the left by it's full width */
-    transition: tranform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 .side-drawer.open {
