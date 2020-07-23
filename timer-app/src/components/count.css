@@ -1,0 +1,6 @@
+.Count {
+    background-color: #282c34;
+    min-height: 60vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
