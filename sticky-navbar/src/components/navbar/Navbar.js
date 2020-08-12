@@ -7,14 +7,14 @@ class Navbar extends Component {
         this.state = {
             addName: ''
         }
-        // this.listenScrollEvent = this.listenScrollEvent.bind(this);
+        // this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.listenScrollEvent);
+        window.addEventListener('scroll', this.handleScroll);
     }
 
-    listenScrollEvent = (e) => {
+    handleScroll = () => {
         if (window.scrollY > 0) {
           this.setState({addName: 'sticky'})
         } else {
@@ -25,7 +25,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-            <header onScroll={this.listenScrollEvent} className={this.state.addName}>
+            <header onScroll={this.handleScroll} className={this.state.addName}>
                 <a href="#home" className="logo">Logo</a>
                 <ul>
                     <li><a href="#about">About</a></li>
