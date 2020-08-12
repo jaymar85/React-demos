@@ -5,15 +5,16 @@ class Navbar extends Component {
     constructor() {
         super();
         this.state = {
-            addName: 'sticky'
+            addName: ''
         }
+        // this.listenScrollEvent = this.listenScrollEvent.bind(this);
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.listenScrollEvent)
+        window.addEventListener('scroll', this.listenScrollEvent);
     }
 
-    listenScrollEvent = e => {
+    listenScrollEvent = (e) => {
         if (window.scrollY > 0) {
           this.setState({addName: 'sticky'})
         } else {
