@@ -5,27 +5,27 @@ class Navbar extends Component {
     constructor() {
         super();
         this.state = {
-            addName: ''
+            addClass: ''
         }
-        // this.handleScroll = this.handleScroll.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
 
-    handleScroll = () => {
+    handleScroll() {
         if (window.scrollY > 0) {
-          this.setState({addName: 'sticky'})
+          this.setState({addClass: 'sticky'})
         } else {
-          this.setState({addName: ''})
+          this.setState({addClass: ''})
         }
     }
     
     render() {
         return (
             <div>
-            <header onScroll={this.handleScroll} className={this.state.addName}>
+            <header onScroll={this.handleScroll} className={this.state.addClass}>
                 <a href="#home" className="logo">Logo</a>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -35,7 +35,7 @@ class Navbar extends Component {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </header>
-            <section className="banner"></section>
+            
             </div>
         );
     }

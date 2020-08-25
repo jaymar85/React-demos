@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.showcase-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100%;
+}
+
+.showcase-text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 75px;
+    font-weight: 700;
+    font-style: normal;
+    /* letter-spacing: 0.1em; */
+    line-height: 1em;
+    text-align: center;
+}
+
+.showcase-text p {
+    color: #fff;
+    text-transform: uppercase;
+}
