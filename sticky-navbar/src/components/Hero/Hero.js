@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import hero from '../../images/nature.jpg';
 import './Hero.css';
 
@@ -17,10 +17,12 @@ import './Hero.css';
 
 class Hero extends Component {
     render() {
+
         return (
             <div>
               <Parallax 
               bgImage={ hero }
+              strength={100}
               >
                 <div style={{height: '110vh'}}>
                     <div className="showcase-text">
